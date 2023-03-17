@@ -6,7 +6,6 @@
                 Add to Cargo Hold
             </button>
             {{item.name}}, {{item.mass}} kg 
-            <!--  || addItem(item.name, item.mass) -->
         </li>
     </ol>
 </div>
@@ -20,7 +19,6 @@
     </ol>
     <p>Mass in Hold: {{cargoMass}} kg</p>
     <p [class.nearMaxMass]="cargoMass >= maximumAllowedMass-200">Mass Budget Remaining: {{maximumAllowedMass - cargoMass}} kg</p>
-    <!-- Add the "Empty Hold" button here. -->
     <button (click)="cargoHold = []; cargoMass = 0">Empty Hold</button>
 </div>
 
